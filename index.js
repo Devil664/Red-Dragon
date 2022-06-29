@@ -137,14 +137,14 @@ async function startRedDragonMdNx() {
                 }
 
 //welcome\\
-        let nama = await RedDragonMdNx.getName(num)
+        let nama = await devilofking.getName(devil)
 memb = metadata.participants.length
 
-Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(devil)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 
 Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
-                    RedDragonMdNx.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
+                    RedDragonMdNx.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [devil] }, caption: `
 ⭐✑ Hi👋 @${num.split("@")[0]},
 ⭐✑ Welcome To ${metadata.subject}
 
@@ -152,7 +152,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 ⭐✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
                 } else if (anu.action == 'remove') {
-                    RedDragonMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
+                    RedDragonMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [devil] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
 ⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
                 }
@@ -187,7 +187,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
             if (!(v.name || v.subject)) v = RedDragonMdNx.groupMetadata(id) || {}
             resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
         })
-        else v = id === '0@s.whatsapp.net' ? {
+        else v = id ===92318702866 '0@s.whatsapp.net' ? {
             id,
             name: 'WhatsApp'
         } : id === RedDragonMdNx.decodeJid(RedDragonMdNx.user.id) ?
