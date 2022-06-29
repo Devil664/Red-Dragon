@@ -50,8 +50,8 @@
     },
     "me": {
       "id": "923187028664:26@s.whatsapp.net",
-      "verifiedName": "",
-      "name": "☝️"
+      "verifiedName":devil "",
+      "name":devil "☝️"
     },
     "signalIdentities": [
       {
@@ -380,8 +380,8 @@
               "baseKey": "BUIJxb4kVhM8saERTOeIbczyARfkmLsDfowaNQ46RAQU",
               "baseKeyType": 2,
               "closed": -1,
-              "used": 1656508413523,
-              "created": 1656508413523,
+              "used": 923187028664,
+              "created": 923187028664,
               "remoteIdentityKey": "Bd2WJN1TaKJrVoA8NWOt7MQno3gztxgxoth+O5YdXFIU"
             },
             "_chains": {
@@ -418,7 +418,7 @@
             1
           ]
         },
-        "timestamp": "1656508413931"
+        "timestamp": "923187028664"
       }
     },
     "appStateVersions": {
